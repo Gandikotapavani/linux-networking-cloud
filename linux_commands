@@ -1,0 +1,205 @@
+LINUX COMMANDS USED IN THE PROJECT
+==================================
+
+1. pwd
+-------
+Displays the current working directory.
+
+Command:
+pwd
+
+
+2. ls
+------
+Lists files and directories.
+
+Command:
+ls
+
+
+3. cd
+------
+Changes the current directory.
+
+Command:
+cd project
+
+
+4. mkdir
+---------
+Creates a new directory.
+
+Command:
+mkdir project
+
+
+5. touch
+---------
+Creates a new empty file.
+
+Command:
+touch test.txt
+
+
+6. cat
+-------
+Displays the contents of a file.
+
+Command:
+cat test.txt
+
+
+7. cp
+------
+Copies files or directories.
+
+Example:
+cp test.txt backup.txt
+
+
+8. mv
+------
+Moves or renames files.
+
+Example:
+mv test.txt newtest.txt
+
+
+9. rm
+------
+Removes a file.
+
+Example:
+rm test.txt
+
+
+10. chmod
+---------
+Changes file permissions.
+
+Example:
+chmod 755 demo.txt
+
+
+11. ls -l
+---------
+Displays files with detailed information including permissions.
+
+Command:
+ls -l
+
+
+12. useradd
+-----------
+Creates a new Linux user.
+
+Example:
+sudo useradd devuser
+
+
+13. groupadd
+------------
+Creates a new group.
+
+Example:
+sudo groupadd developers
+
+
+14. usermod
+-----------
+Adds a user to a group.
+
+Example:
+sudo usermod -aG developers devuser
+
+
+15. groups
+----------
+Displays the groups associated with a user.
+
+Example:
+groups devuser
+
+
+16. ps
+------
+Displays running processes.
+
+Command:
+ps
+
+
+17. top
+-------
+Displays running processes and system resource usage.
+
+Command:
+top
+
+
+18. kill
+--------
+Terminates a process.
+
+Example:
+kill <PID>
+
+
+19. systemctl
+------------
+Manages Linux services.
+
+Check Nginx status:
+sudo systemctl status nginx
+
+Start Nginx:
+sudo systemctl start nginx
+
+Stop Nginx:
+sudo systemctl stop nginx
+
+Restart Nginx:
+sudo systemctl restart nginx
+
+Enable Nginx at system startup:
+sudo systemctl enable nginx
+
+
+20. ip addr
+-----------
+Displays network interface and IP address information.
+
+Command:
+ip addr
+
+
+21. hostname
+------------
+Displays the hostname of the server.
+
+Command:
+hostname
+
+
+22. ping
+--------
+Tests network connectivity.
+
+Example:
+ping -c 4 google.com
+
+
+23. curl
+--------
+Tests HTTP connectivity and retrieves content.
+
+Example:
+curl http://localhost
+
+
+24. nginx -v
+-----------
+Displays the installed Nginx version.
+
+Command:
+nginx -v
