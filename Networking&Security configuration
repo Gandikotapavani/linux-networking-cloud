@@ -1,0 +1,137 @@
+NETWORKING & SECURITY CONFIGURATION
+===================================
+
+1. IP ADDRESS
+-------------
+
+An IP address identifies a device or server on a network.
+
+Example:
+192.168.1.10
+
+In this project, the AWS EC2 server was accessed using its public IP address.
+
+
+2. PUBLIC IP
+------------
+
+A public IP address allows a cloud server to communicate with the Internet.
+
+The public IP of the EC2 instance was used to access the Nginx web page from a browser.
+
+
+3. PRIVATE IP
+-------------
+
+A private IP is used for communication within a private network such as a VPC.
+
+AWS resources can communicate with each other using private IP addresses.
+
+
+4. PORTS
+--------
+
+A port identifies a specific network service running on a server.
+
+Important ports used:
+
+Port 22 - SSH
+Used for secure remote access to the Linux server.
+
+Port 80 - HTTP
+Used to access the Nginx web server.
+
+
+5. SSH
+-------
+
+SSH stands for Secure Shell.
+
+It is used to securely connect to and manage a remote Linux server.
+
+Example:
+
+ssh -i key.pem user@PUBLIC-IP
+
+
+6. DNS
+------
+
+DNS stands for Domain Name System.
+
+DNS translates human-readable domain names into IP addresses.
+
+Example:
+
+example.com → IP address
+
+
+7. FIREWALL
+-----------
+
+A firewall controls incoming and outgoing network traffic.
+
+It helps protect servers from unauthorized network access.
+
+
+8. AWS SECURITY GROUP
+---------------------
+
+An AWS Security Group acts as a virtual firewall for AWS resources such as EC2 instances.
+
+The Security Group was configured with the required inbound rules.
+
+Inbound rules:
+
+SSH
+Port: 22
+Purpose: Secure server access
+
+HTTP
+Port: 80
+Purpose: Access the Nginx web server
+
+
+9. NETWORK FLOW
+---------------
+
+Internet
+   |
+   | HTTP - Port 80
+   ↓
+AWS Security Group
+   |
+   ↓
+EC2 Linux Server
+   |
+   ↓
+Nginx
+   |
+   ↓
+Custom Web Page
+
+
+10. CONNECTIVITY TEST
+---------------------
+
+The following command was used to test local HTTP connectivity:
+
+curl http://localhost
+
+The web application was also tested from a browser using:
+
+http://PUBLIC-IP
+
+
+11. NETWORKING CONCEPTS LEARNED
+-------------------------------
+
+- IP addressing
+- Public and private IP addresses
+- SSH
+- DNS
+- Network ports
+- HTTP
+- Firewall
+- AWS Security Groups
+- Network connectivity
